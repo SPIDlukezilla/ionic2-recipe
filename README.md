@@ -22,3 +22,6 @@ what I've used:
 	-popover  
 	-http get & http put  
   -firebase database  
+
+  
+How to export the app as .apk and running it on a real device
