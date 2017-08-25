@@ -1,26 +1,24 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+To install the project on your computer use git clone and npm install.
 
-## How to use this template
+Recipes app
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+Sign up or sign in as an existing user (using firebase auth), add ingredients to shopping list. Import / save ingredients list using http get / put. 
+Add a new recipe with ingredients. Import / save recipes using http get / put. (firebase database)
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
-
-### With the Ionic CLI:
-
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
-
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myBlank blank
-```
-
-Then, to run it, cd into `myBlank` and run:
-
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
-```
-
-Substitute ios for android if not on a Mac.
-
+what I've used:
+	-tabs navigation
+	-app theme
+	-user inputs
+	-template driven form
+	-reactive form
+	-managing data with a service
+	-editing / removing items
+	-toasts
+	-sidemenu
+	-signup & signin page
+	-firebase auth
+	-firebase token
+	-user login
+	-popover
+	-http get & http put
+  -firebase database
