@@ -5,26 +5,59 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
+import { EditRecipePage } from '../pages/edit-recipe/edit-recipe';
+import { RecipePage } from '../pages/recipe/recipe';
+import { RecipesPage } from '../pages/recipes/recipes';
+import { ShoppingListPage } from '../pages/shopping-list/shopping-list';
+import { TabsPage } from '../pages/tabs/tabs';
+import { ShoppingListService } from '../services/shopping-list'
+import { RecipesService } from '../services/recipes';
+import { SignupPage } from '../pages/signup/signup';
+import { SigninPage } from '../pages/signin/signin';
+import { AuthService } from '../services/auth';
+import { SLOptionsPage } from '../pages/sl-options/sl-options';
+import { HttpModule } from '@angular/http';
+
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    EditRecipePage,
+    RecipePage,
+    RecipesPage,
+    ShoppingListPage,
+    TabsPage,
+    SignupPage,
+    SigninPage,
+    SLOptionsPage
+ 
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    HttpModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    EditRecipePage,
+    RecipePage,
+    RecipesPage,
+    ShoppingListPage,
+    TabsPage,
+    SignupPage,
+    SigninPage,
+    SLOptionsPage
+ 
+  
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    ShoppingListService,
+    RecipesService,
+    AuthService
   ]
 })
 export class AppModule {}
